@@ -8,4 +8,10 @@ function fizBuz(no) {
     else return "BUZZ"
 }
 
-export { max, fizBuz }
+function average(nums) {
+    if (nums.length === 0) return NaN;
+    const sum = nums.reduce((acc, item) => acc + item,0)
+    return sum / nums.length
+}
+
+export { max, fizBuz,average }
